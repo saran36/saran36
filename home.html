@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        {% block content%}
+        <form action="application" autocomplete="off" method="POST">
+            {% csrf_token%}
+             <table class="center">
+                 <tr>
+                     <th colspan="2">
+                         <center><h3>apply</h3></center>
+                     </th>
+                 </tr>
+                 <tr>
+                     <th>Name</th>
+                     <td><input type="text"name="name"></td>
+                 </tr>
+                 <tr>
+                     <th>address</th>
+                     <td><input type="text"name="address"></td>
+                 </tr>
+                 <tr>
+                    <th>mail</th>
+                    <td><input type="text"name="mail"></td>
+                </tr>
+                <tr>
+                    <th>password</th>
+                    <td><input type="text"name="password"></td>
+                </tr>
+                <tr>
+                    <th>Submit</th>
+                    <td><input type="submit"value="submit"></td>
+                </tr>
+             </table>
+             </form>
+        <% endblock%>
+    </body>
+</html>
